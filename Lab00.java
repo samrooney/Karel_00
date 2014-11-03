@@ -31,36 +31,3 @@ public class Lab00 {
 }
 
 
-public class SampleSubclass extends Object {
-
-	private String nickname; // a new data field!  Object does not have this
-	
-	public SampleSubclass(String n) { // a constructor for this object
-		super(); 
-		nickname = n; // take the String provided and store it in the 'name' data field
-	}
-	
-	@Override // redefine behavior inherited from the superclass
-	public String toString() {
-		return nickname;
-	}
-	
-	/**
-	 * Create a greeting String
-	 * 
-	 * @return	a casual greeting
-	 */
-	public String sayHello() {
-		return "Hi.  You can call me "+nickname;
-	}
-	
-	/**
-	 * Change the nickname of this particular instance
-	 * 
-	 * @param newname
-	 * 		the new nickname that this instance should hold
-	 */
-	public void changeName(String newname) {
-		nickname = newname;
-	}
-}
